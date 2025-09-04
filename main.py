@@ -1,12 +1,13 @@
 import tkinter
 import os
 import platform
+import sys
 
 root = tkinter.Tk()
 
 root.title('VFS')
 
-root.geometry('800x400')
+root.geometry('800x500')
 
 history = tkinter.Text(root)
 history.config(state='disabled')
@@ -30,6 +31,8 @@ def view():
         history.insert(tkinter.END, f"cd: {parts[1:]}\n")
     elif cmd.startswith("$"):
         parser()
+    elif parts[0] == 'exit':
+        sys.exit()
     else:
         history.insert(tkinter.END, f"{platform.node()} ~ % unknown command\n")
     commands.delete(0, tkinter.END)
