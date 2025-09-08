@@ -1,0 +1,6 @@
+# Продвинутый тест
+ls -l -a -h
+cd /usr/local/bin
+$HOME
+$PATH
+unknown_command
