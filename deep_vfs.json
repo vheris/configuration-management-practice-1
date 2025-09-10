@@ -1,0 +1,57 @@
+{
+  "/": {
+    "type": "directory",
+    "content": {
+      "level1": {
+        "type": "directory",
+        "content": {
+          "level2": {
+            "type": "directory", 
+            "content": {
+              "level3": {
+                "type": "directory",
+                "content": {
+                  "deep_file.txt": {
+                    "type": "file",
+                    "content": "Файл на 4 уровне вложенности",
+                    "encoding": "text"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "home": {
+        "type": "directory",
+        "content": {
+          "user": {
+            "type": "directory",
+            "content": {
+              "documents": {
+                "type": "directory",
+                "content": {
+                  "project": {
+                    "type": "directory",
+                    "content": {
+                      "src": {
+                        "type": "directory",
+                        "content": {
+                          "main.py": {
+                            "type": "file",
+                            "content": "print('Hello World')",
+                            "encoding": "text"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

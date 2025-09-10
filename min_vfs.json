@@ -1,0 +1,12 @@
+{
+  "/": {
+    "type": "directory",
+    "content": {
+      "readme.txt": {
+        "type": "file",
+        "content": "Минимальная версия",
+        "encoding": "text"
+      }
+    }
+  }
+}

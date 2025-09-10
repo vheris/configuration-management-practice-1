@@ -1,0 +1,22 @@
+{
+  "/": {
+    "type": "directory",
+    "content": {
+      "file1.txt": {
+        "type": "file", 
+        "content": "Содержимое файла 1",
+        "encoding": "text"
+      },
+      "file2.txt": {
+        "type": "file",
+        "content": "U29tZSBiaW5hcnkgZGF0YQ==",
+        "encoding": "base64"
+      },
+      "file3.txt": {
+        "type": "file",
+        "content": "Третий файл",
+        "encoding": "text"
+      }
+    }
+  }
+}
