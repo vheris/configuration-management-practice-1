@@ -3,6 +3,8 @@ import os
 import platform
 import sys
 
+"""Нужно сделать обработку ошибок во время выполнения скрипта."""
+
 vfs_path = None
 script_path = None
 
@@ -55,6 +57,7 @@ def view():
     cmd = commands.get()
     history.config(state='normal')
     history.insert(tkinter.END, f"{platform.node()} ~ % {cmd}\n")
+    cmd = os.path.expandvars(cmd)
     vfs_commands(cmd.split(), cmd)
     commands.delete(0, tkinter.END)
     history.config(state='disabled')
