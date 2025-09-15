@@ -83,6 +83,8 @@ def vfs_commands(parts, cmd):
         parser()
     elif parts[0] == 'exit':
         sys.exit()
+    elif parts[0] == 'error':
+        raise Exception("Тестовая ошибка выполнения скрипта")
     else:
         history.insert(tkinter.END, f"{platform.node()} ~ % unknown command\n")
 

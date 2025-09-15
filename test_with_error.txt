@@ -1,0 +1,4 @@
+ls -l -a -h
+cd /usr/local/bin
+$HOME
+error
