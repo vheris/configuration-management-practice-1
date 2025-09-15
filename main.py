@@ -20,6 +20,7 @@ commands.bind("<Return>", lambda event: view())
 
 def view():
     cmd = commands.get()
+    cmd = os.path.expandvars(cmd)
     history.config(state='normal')
     history.insert(tkinter.END, f"{platform.node()} ~ % {cmd}\n")
     parts = cmd.split()
