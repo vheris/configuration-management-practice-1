@@ -72,6 +72,7 @@ def view():
     cmd = commands.get()
     history.config(state='normal')
     history.insert(tkinter.END, f"{platform.node()} ~ % {cmd}\n")
+    cmd = os.path.expandvars(cmd)
     vfs_commands(cmd.split(), cmd)
     commands.delete(0, tkinter.END)
     history.config(state='disabled')
@@ -96,6 +97,8 @@ def vfs_commands(parts, cmd):
         parser()
     elif parts[0] == 'exit':
         sys.exit(1)
+    elif parts[0] == 'error':
+        raise Exception("Тестовая ошибка выполнения скрипта")
     else:
         history.insert(tkinter.END, f"{platform.node()} ~ % unknown command\n")
 

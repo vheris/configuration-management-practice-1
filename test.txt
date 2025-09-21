@@ -4,3 +4,4 @@ cd /usr/local/bin
 $HOME
 $PATH
 unknown_command
+error
