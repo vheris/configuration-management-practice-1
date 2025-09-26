@@ -1,26 +1,17 @@
-# Этот скрипт демонстрирует все возможности
-
-# Команда ls без аргументов
-ls
-
-# Команда ls с аргументами  
-ls -la
-ls -l -a -h
-
-# Команда cd с разными аргументами
-cd /home/user
-cd ..
-cd /usr/local/bin
-
-# Работа с переменными окружения
+# Продвинутый тест
+ls home
+cd level1/level2/level3
+tac deep_file.txt
+wc deep_file.txt
+uname
+uname -a
+uname -s
+uname -n
+uname -r
+uname -v
+uname -m
+uname --help
 $HOME
-$USER
 $PATH
-
-# Пустая строка (игнорируется)
-
-# Неизвестная переменная (вызовет ошибку)
-$UNKNOWN_VAR
-
-# Неизвестная команда (вызовет ошибку)
 unknown_command
+error
