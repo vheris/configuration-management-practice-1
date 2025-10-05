@@ -91,7 +91,6 @@ def ls_command(vfs_data, path, args):
     # Обработка аргументов
     if args:
         if args[0].startswith("-"):
-            # Пропускаем флаги (упрощенная реализация)
             path_args = args[1:]
         else:
             path_args = args
@@ -125,7 +124,7 @@ def ls_command(vfs_data, path, args):
     # Получаем содержимое директории
     content = target_dir.get("content", {})
     if not content:
-        return ""  # Пустая директория
+        return ""
     
     # Формируем список файлов и папок
     items = []
